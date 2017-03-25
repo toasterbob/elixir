@@ -5,9 +5,12 @@ defmodule MyRange do
 end
 
 defmodule FizzBuzz do
-  def fizz_buzz((1..20)) do
+  def fizz_buzz(range) do 
 
   end
 
+  def fizz_buzz(range) do
+
+  end
 
 end
