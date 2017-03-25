@@ -44,11 +44,31 @@ defmodule MyList do
     head + sum(tail)
   end
 
-  def my_reduce([]) do
-    []
+  def my_reduce([], acc, func) do
+    acc
   end
 
   def my_reduce(list, acc, func) do
+    [head|tail] = list
+    my_reduce(tail, func.(head, acc), func)
+  end
+
+  def my_select([], result, func) do
+    result
+  end
+
+  def my_select(list, func) do
+    my_select(list, [], func)
+  end
+
+  def my_select(list, result, func) do
+    [head|tail] = list
+    if func.(head) do
+      my_select(tail, result ++ [head], func)
+    else
+      my_select(tail, result, func)
+    end
 
   end
+
 end
