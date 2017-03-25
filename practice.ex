@@ -5,7 +5,7 @@ defmodule MyRange do
 end
 
 defmodule FizzBuzz do
-  
+
   def fizz_buzz([]) do
     []
   end
@@ -31,4 +31,16 @@ defmodule FizzBuzz do
     head
   end
 
+end
+
+
+defmodule MyList do
+  def sum([]) do
+    0
+  end
+
+  def sum(list) do
+    [head|tail] = list
+    head + sum(tail)
+  end
 end
