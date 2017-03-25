@@ -1,23 +1,9 @@
 defmodule ChatServer do
-  @moduledoc """
-  Documentation for ChatServer.
-  """
 
-  @doc """
-  Hello world.
+  use GenServer
 
-  ## Examples
-
-      iex> ChatServer.hello
-      :world
-
-  """
   defmodule Message do
     defstruct content: "", username: "anon"
-  end
-
-  def hello do
-    :world
   end
 
   def loop do
@@ -41,3 +27,5 @@ defmodule ChatServer do
   end
 
 end
+
+# c("chat_server.ex")
