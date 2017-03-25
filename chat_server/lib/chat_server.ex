@@ -15,7 +15,7 @@ defmodule ChatServer do
   end
 
   def init(:ok) do
-    {:ok, []}
+    {:ok, []} 
   end
 
   def handle_call(request, who, state) do
