@@ -5,6 +5,7 @@ defmodule MyRange do
 end
 
 defmodule FizzBuzz do
+  
   def fizz_buzz([]) do
     []
   end
@@ -29,6 +30,5 @@ defmodule FizzBuzz do
   def fb_check(head) do
     head
   end
-
 
 end
