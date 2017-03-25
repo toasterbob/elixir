@@ -43,4 +43,12 @@ defmodule MyList do
     [head|tail] = list
     head + sum(tail)
   end
+
+  def my_reduce([]) do
+    []
+  end
+
+  def my_reduce(list, acc, func) do
+
+  end
 end
