@@ -1,3 +1,4 @@
+https://github.com/ragegage/elixir_lectures
 
 Phoenix - Rails for Elixir
 
@@ -8,3 +9,8 @@ create Phoenix
 
 mix phoenix.new APP_NAME
 mix ecto.create
+
+scaffold
+
+mix phoenix.gen.html User users
+name: string email:string
